@@ -1,0 +1,9 @@
+{
+  "name": "portfolio_v2",
+  "version": "1.0.0",
+  "description": "professional portfolio",
+  "main": "index.js",
+  "repository": "git@github.com:cmoutella/new_portfolio.git",
+  "author": "Carolina Moutella <emaildacarolmoutella@gmail.com>",
+  "license": "MIT"
+}
