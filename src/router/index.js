@@ -1,15 +1,27 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+
+// Pages Imports
+import Home from '@/components/Home/index';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      path: '/', // default path # HOME
+      name: 'Home',
+      component: Home,
     },
+    {
+      path: '/pt',
+      name: 'Home - PortugueseVersion',
+      component: Home,
+    },
+    // {
+    //   path: '/en',
+    //   name: 'Home - EnglishVersion',
+    //   component: HomeEnglish,
+    // },
   ],
 });
