@@ -9,3 +9,5 @@ export default {
   name: 'portfolio',
 };
 </script>
+
+<style src="./index.scss" lang="scss" scoped />
