@@ -2,7 +2,7 @@
   "name": "new_portfolio",
   "version": "1.0.0",
   "description": "Professional website and portfolio",
-  "author": "Carolina Moutella <emaildacarolmoutella@gmail.com>",
+  "author": "Carolina Moutella <ola@carolinamoutella.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
