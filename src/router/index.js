@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 // Pages Imports
-import Home from '@/components/Home/index';
+import Home from '@/pages/Home/index';
 
 Vue.use(Router);
 
