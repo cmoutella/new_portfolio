@@ -1,0 +1,39 @@
+@mixin clearfix {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+    }
+}
+
+@mixin reset {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin reset-list {
+	@include reset;
+	list-style: none;
+}
+
+@mixin reset-button {
+	@include reset;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+@mixin responsive-image {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+
+@mixin hide {
+	color: transparent;
+	display: none;
+	font: 0/0 serif;
+	height: rem(0);
+}
