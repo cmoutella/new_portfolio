@@ -1,151 +1,206 @@
 @import '@/assets/scss/main.scss';
 
-.devm-home {
-	width: 100vw;
-	
-	.devm {
-		&-top {
-			background-color: $color-primary-200;
-			height: 185px;
-			width: 100vw;
-			box-sizing: border-box;
-			padding: 32px;
+.devm {
+	&-top {
+		background-color: $color-primary-200;
+		height: 185px;
+		width: 100vw;
+		box-sizing: border-box;
+		padding: 32px;
 
-			@include breakpoint(sm) {
-				height: 275px;
-			}
+		@include breakpoint(sm) {
+			height: 275px;
 		}
+	}
 
-		&-name {
-			color: $color-light;
-			font-family: $RedHat;
-			font-size: 28px;
-			font-weight: 500;
-			text-align: center;
-			transform: translateY(10px);
-			display: block;
-			
-			span {
-				color: $color-gray-300;
-			}
-			
-			@include breakpoint(sm) {
-				font-size: 45px;
-				text-align: left;
-				transform: translateY(137px);
-			}
-			@include breakpoint(md) {
-				font-size: 70px;
-				transform: translateY(107px);
-			}
-			@include breakpoint(lg) {
-				font-size: 90px;
-				transform: translateY(77px);
-			}
+	&-name {
+		color: $color-light;
+		font-family: $RedHat;
+		font-size: 28px;
+		font-weight: 500;
+		text-align: center;
+		transform: translateY(10px);
+		display: block;
+		
+		span {
+			color: $color-gray-300;
 		}
+		
+		@include breakpoint(sm) {
+			font-size: 45px;
+			text-align: left;
+			transform: translateY(137px);
+		}
+		@include breakpoint(md) {
+			font-size: 70px;
+			transform: translateY(107px);
+		}
+		@include breakpoint(lg) {
+			font-size: 80px;
+			transform: translateY(77px);
+		}
+	}
 
-		&-toon {
+	&-toon {
+		content: '';
+		width: 115px;
+		height: 150px;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url('../../assets/images/cm-toon.svg');
+		display: block;
+		position: absolute;
+		right: 50%;
+		transform: translate(50%);
+		top: 70px;
+
+		@include breakpoint(sm) {
+			display: none;
+		}
+	}
+
+	&-language {
+		@include reset-list;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		right: -30px;
+		top: 80px;
+		height: 60px;
+		width: 96px;
+		font-weight: 300;
+		font-size: 14px;
+		color: $color-gray-100;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url('../../assets/images/baloon.svg');
+
+		@include breakpoint(sm) {
+			top: 30px;
+			right: 40px;
+		}
+		@include breakpoint(md) {
+			right: 0;
+		}
+		@include breakpoint(lg) {
+			right: -30px;
+		}
+		
+		&:before {
+			display: none;
 			content: '';
-			width: 115px;
-			height: 150px;
 			background-position: center;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-image: url('../../assets/images/cm-toon.svg');
-			display: block;
 			position: absolute;
-			right: 50%;
-			transform: translate(50%);
-			top: 70px;
+			width: 250px;
+			height: 319px;
+			bottom: -300px;
+			left: -190px;					
 
 			@include breakpoint(sm) {
+				display: block;
+			}
+			@include breakpoint(lg) {
+				width: 340px;
+				height: 432px;
+				bottom: -360px;
+				left: -290px;
+			}
+		}
+		
+		@include breakpoint(md) {
+			color: $color-light;
+			background-image: none;
+			
+			&:hover {
+				background-image: url('../../assets/images/baloon.svg');
+				color: $color-gray-100;
+			}
+		}
+		
+		&-option, span {
+			transform: translateY(-7px);
+		}
+
+		&-option {
+			&--active {
+				font-weight: 700;
+			}
+			
+			input {
 				display: none;
+			}
+
+			label {
+				cursor: pointer;
 			}
 		}
 
-		&-language {
-			@include reset-list;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: absolute;
-			right: -30px;
-			top: 80px;
-			height: 60px;
-			width: 96px;
-			font-weight: 300;
-			font-size: 14px;
+		span {
+			margin: 0 3px;
+		}
+	}
+
+	&-title {
+		position: relative;
+		margin: 100px auto 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 303px;
+		transform: translateX(-6px);
+
+		@include breakpoint(sm) {
+			margin-top: 150px;
+			width: 710px;
+		}
+		@include breakpoint(md) {
+			margin-left: 20px;
+			margin-top: 100px;
+		}
+		@include breakpoint(lg){
+			width: 810px;
+			margin-top: 80px;
+			margin-left: 30px;
+		}
+
+		h1 {
+			font-family: $BlackHans;
 			color: $color-gray-100;
-			background-position: center;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-image: url('../../assets/images/baloon.svg');
+			font-size: 27px;
+			margin-left: 60px;
 
 			@include breakpoint(sm) {
-				top: 30px;
-				right: 40px;
-			}
-			@include breakpoint(md) {
-				right: 0;
+				font-size: 54px;
 			}
 			@include breakpoint(lg) {
-				right: -30px;
+				font-size: 64px;
 			}
-			
-			&:before {
-				display: none;
-				content: '';
-				background-position: center;
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-image: url('../../assets/images/cm-toon.svg');
-				position: absolute;
-				width: 250px;
-				height: 319px;
-				bottom: -300px;
-				left: -190px;					
+		}
 
-				@include breakpoint(sm) {
-					display: block;
-				}
-				@include breakpoint(lg) {
-					width: 340px;
-					height: 432px;
-					bottom: -360px;
-					left: -290px;
-				}
-			}
-			
-			@include breakpoint(md) {
-				color: $color-light;
-				background-image: none;
-				
-				&:hover {
-					background-image: url('../../assets/images/baloon.svg');
-					color: $color-gray-100;
-				}
-			}
-			
-			&-option, span {
-				transform: translateY(-7px);
-			}
+		span {
+			font-family: $Paytone;
+			color: $color-primary-100;
+			font-size: 210px;
+			position: absolute;
+			top: -105px;
+			left: 0;
+			z-index: -1;
 
-			&-option {
-				&--active {
-					font-weight: 700;
-				}
-				
-				input {
-					display: none;
-				}
-
-				label {
-					cursor: pointer;
-				}
+			@include breakpoint(sm) {
+				font-size: 370px;
+				top: -175px;
+				width: 134px;
 			}
-
-			span {
-				margin: 0 3px;
+			@include breakpoint(lg) {
+				font-size: 430px;
+				top: -205px;
+				width: 310px;
 			}
 		}
 	}

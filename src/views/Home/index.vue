@@ -17,7 +17,14 @@
         </ul>
       </div>
     </div>
-    <div class="devm-home-content"></div>
+    <div class="container">
+      <div class="devm-title">
+        <h1>Web Designer <br> Desenvolvedora</h1>
+        <span>&</span>
+      </div>
+    </div>
+    <div class="devm-content">
+    </div>
   </div>
 </template>
 
