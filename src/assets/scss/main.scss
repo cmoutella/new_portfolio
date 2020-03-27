@@ -1,3 +1,23 @@
 @import './breakpoints';
 @import './variables';
 @import './fonts';
+@import './mixins';
+@import './buttons';
+
+.container {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+    // @include breakpoint(sm) {
+    //     width: 750px;
+    // }
+
+    // @include breakpoint(md) {
+    //     width: 970px;
+    // }
+
+    // @include breakpoint(lg) {
+    //     width: 1170px;
+    // }
+}

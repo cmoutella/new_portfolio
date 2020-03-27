@@ -17,4 +17,13 @@ export default {
 </script>
 
 <style>
+body, html {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+p {
+  margin: 0;
+}
 </style>
