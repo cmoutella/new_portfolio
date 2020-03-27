@@ -20,6 +20,8 @@ p {
 	display: block;
 	position: relative;
 	margin: 0 10px;
+	height: 100%;
+	max-width: 100%;
 	
 	@include breakpoint(sm) {
 		margin: 0 auto;
