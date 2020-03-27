@@ -31,7 +31,7 @@
 			@include reset-list;
 			display: flex;
 			font-weight: 300;
-			color: $color-light;
+			color: $color-gray-100;
 			font-size: 16px;
 			height: 77px;
 			width: 96px;
@@ -39,15 +39,22 @@
 			justify-content: center;
 			position: absolute;
 			right: 0;
-
-			&:hover {
-				color: $color-gray-100;
-				background-image: url('../../assets/images/baloon.svg');
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url('../../assets/images/baloon.svg');
+			
+			
+			@include breakpoint(md) {
+				color: $color-light;
+				background-image: none;
+				
+				&:hover {
+					background-image: url('../../assets/images/baloon.svg');
+					color: $color-gray-100;
+				}
 			}
-
+			
 			&-option, span {
 				transform: translateY(-7px);
 			}
