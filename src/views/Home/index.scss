@@ -1,1 +1,22 @@
 @import '@/assets/scss/main.scss';
+
+.devm-home {
+	.devm {
+		&-top {
+			background-color: $color-primary-200;
+			height: 375px;
+			width: 100vw;
+		}
+
+		&-name {
+			color: $color-light;
+			font-family: $RedHat;
+			font-size: 28px;
+			font-weight: 500;
+
+			span {
+				color: $color-gray-300;
+			}
+		}
+	}
+}
