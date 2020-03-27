@@ -17,6 +17,58 @@
 			span {
 				color: $color-gray-300;
 			}
+
+			@include breakpoint(sm) {
+				font-size: 45px;
+			}
+
+			@include breakpoint(md) {
+				font-size: 95px;
+			}
+		}
+
+		&-language {
+			@include reset-list;
+			display: flex;
+			font-weight: 300;
+			color: $color-light;
+			font-size: 16px;
+			height: 77px;
+			width: 96px;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			right: 0;
+
+			&:hover {
+				color: $color-gray-100;
+				background-image: url('../../assets/images/baloon.svg');
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			&-option, span {
+				transform: translateY(-7px);
+			}
+
+			&-option {
+				&--active {
+					font-weight: 700;
+				}
+				
+				input {
+					display: none;
+				}
+
+				label {
+					cursor: pointer;
+				}
+			}
+
+			span {
+				margin: 0 3px;
+			}
 		}
 	}
 }

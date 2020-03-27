@@ -8,6 +8,7 @@
             <input type="radio" v-model="language" value="1" label="PT" id="lang_portuguese" />
             <label for="lang_portuguese">PT</label>
           </li>
+          <span>/</span>
           <li class="devm-language-option">
             <input type="radio" v-model="language" value="1" label="EN" id="lang_english" />
             <label for="lang_english">EN</label>
