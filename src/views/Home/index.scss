@@ -263,7 +263,9 @@
 			}
 
 			.cta {
-				margin-right: -40px !important;
+				@include breakpoint(md) {
+					margin-right: -40px !important;
+				}
 			}
 		}
 		
