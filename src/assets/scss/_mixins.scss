@@ -6,22 +6,11 @@
     }
 }
 
-@mixin reset {
+@mixin reset-list {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-@mixin reset-list {
-	@include reset;
 	list-style: none;
-}
-
-@mixin reset-button {
-	@include reset;
-	background: transparent;
-	border: none;
-	cursor: pointer;
 }
 
 @mixin responsive-image {
