@@ -16,6 +16,10 @@ p {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container {
 	display: block;
 	position: relative;
@@ -25,14 +29,14 @@ p {
 	
 	@include breakpoint(sm) {
 		margin: 0 auto;
-		width: 750px;
+		max-width: 750px;
 	}
 
 	@include breakpoint(md) {
-		width: 970px;
+		max-width: 970px;
 	}
 
 	@include breakpoint(lg) {
-		width: 1170px;
+		max-width: 1170px;
 	}
 }
