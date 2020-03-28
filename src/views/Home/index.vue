@@ -29,7 +29,7 @@
            peças para marketing digital e projetos completos de UI.</p>
         <span class="devm-skills-mockup devm-skills-mockup--designer"></span>
         <div class="cta">
-          <a class="btn btn-primary" href="https://www.behance.net/ carolinamoutella/">Conheça meu trabalho</a>
+          <a class="btn btn-primary" href="https://www.behance.net/carolinamoutella/">Conheça meu trabalho</a>
         </div>
       </div>
     </div>
